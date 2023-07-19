@@ -1,0 +1,43 @@
+using System;
+
+namespace DortIslem
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("4 İşlem Programına Hoş Geldiniz!");
+            Console.WriteLine("İlk sayıyı girin:");
+            double sayi1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("İkinci sayıyı girin:");
+            double sayi2 = Convert.ToDouble(Console.ReadLine());
+
+            // Toplama işlemi
+            double toplam = sayi1 + sayi2;
+            Console.WriteLine("Toplam: " + toplam);
+
+            // Çıkarma işlemi
+            double fark = sayi1 - sayi2;
+            Console.WriteLine("Fark: " + fark);
+
+            // Çarpma işlemi
+            double carpim = sayi1 * sayi2;
+            Console.WriteLine("Çarpım: " + carpim);
+
+            // Bölme işlemi
+            if (sayi2 != 0)
+            {
+                double bolum = sayi1 / sayi2;
+                Console.WriteLine("Bölüm: " + bolum);
+            }
+            else
+            {
+                Console.WriteLine("Bir sayıyı 0'a bölemezsiniz!");
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
+
